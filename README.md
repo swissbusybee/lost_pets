@@ -33,10 +33,10 @@ Let’s create a Rails app to report pets you found on the street!
 - [ ] As a user I can update a pet
 - [ ] As a user I can delete a pet
 
-## Pseudo-code
+## Coding steps
 
 - Create Model
-- Create routes
+- Create Routes
 - Create Controller
 - Create View
 
