@@ -1,9 +1,14 @@
-<h1>Founded pets</h1>
+<div class="container">
+  <h1>Founded pets</h1>
 
-<ul>
-  <% @pets.each do |pet| %>
-    <li>
-      <%= link_to pet.name, pet_path(pet) %>
-    </li>
-  <% end %>
-</ul>
+  <ul>
+    <% @pets.each do |pet| %>
+      <li>
+        <%= link_to pet.name, pet_path(pet) %>
+      </li>
+    <% end %>
+  </ul>
+
+
+  <%= link_to "Add a pet", new_pet_path %>
+</div>
