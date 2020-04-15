@@ -4,7 +4,11 @@
   <ul>
     <% @pets.each do |pet| %>
       <li>
-        <%= link_to pet.name, pet_path(pet) %>
+        <%= link_to pet.name, pet_path(pet) %> |
+        <%= link_to "Delete",
+                    pet_path(pet),
+                    method: :delete,
+                    data: { confirm: "Are you sure?" } %>
       </li>
     <% end %>
   </ul>

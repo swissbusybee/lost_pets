@@ -31,7 +31,7 @@ Let’s create a Rails app to report pets you found on the street!
 - [x] As a user I can see details about one found pet (when and where it was found)
 - [x] As a user I can add a pet I found
 - [x] As a user I can update a pet
-- [ ] As a user I can delete a pet
+- [x] As a user I can delete a pet
 
 ## Coding steps
 

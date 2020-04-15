@@ -1,10 +1,11 @@
 class PetsController < ApplicationController
+  before_action :set_path, only:[:show, :edit, :update, :destroys]
+
   def index
     @pets = Pet.all
   end
 
   def show
-    @pet = Pet.find(params[:id])
   end
 
   def new
@@ -21,11 +22,9 @@ class PetsController < ApplicationController
   end
 
   def edit
-    @pet = Pet.find(params[:id])
   end
 
   def update
-    @pet = Pet.find(params[:id])
     @pet.update(pet_params)
     if @pet.save
       redirect_to pet_path(@pet.id)
@@ -34,9 +33,18 @@ class PetsController < ApplicationController
     end
   end
 
+  def destroy
+    @pet.destroy
+    redirect_to pets_path
+  end
+
   private
 
   def pet_params
     params.require(:pet).permit(:name, :location_found, :found_at, :species)
+  end
+
+  def set_pet
+    @pet = Pet.find(params[:id])
   end
 end
