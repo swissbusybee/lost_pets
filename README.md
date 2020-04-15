@@ -1,18 +1,6 @@
 # Evening course
 
-## Statement
-
-Let’s create a Rails app to report pets you found on the street!
-
-## User Stories
-
-- [ ] As a user I can see all found pets
-- [ ] As a user I can see details about one found pet (when and where it was found)
-- [ ] As a user I can add a pet I found
-- [ ] As a user I can update a pet
-- [ ] As a user I can delete a pet
-
-## CRUD Action
+## Reminder about CRUD Action
 
 | CRUD |  HTTP verb |
 |------|------------|
@@ -21,7 +9,7 @@ Let’s create a Rails app to report pets you found on the street!
 | U    | PATCH      |
 | D    | DELETE     |
 
-## Routes
+## Reminder about Routes
 
 | HTTP verb | Controller action | ActiveRecord method |
 |-----------|-------------------|---------------------|
@@ -33,20 +21,31 @@ Let’s create a Rails app to report pets you found on the street!
 | PATCH     | update            | update(attributes)  |
 | DELETE    | destroy           | destroy             |
 
+## Statement / Goal
+
+Let’s create a Rails app to report pets you found on the street!
+
+## User Stories
+
+- [ ] As a user I can see all found pets
+- [ ] As a user I can see details about one found pet (when and where it was found)
+- [ ] As a user I can add a pet I found
+- [ ] As a user I can update a pet
+- [ ] As a user I can delete a pet
 
 ## Pseudo-code
 
 - Create Model
 - Create routes
 - Create Controller
-- Crate View
+- Create View
 
 ## Model Pet.rb
 
-- a name
-- the address it was found at
-- a species (string)
-- the date it was found on
+- name
+- address it was found at
+- species (string)
+- date it was found on
 
 ## Validations
 
